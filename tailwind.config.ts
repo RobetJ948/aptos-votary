@@ -19,6 +19,7 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Shadcn/UI Core Colors
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -52,16 +53,37 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				
+				// Custom Greyscale Palette for InvestDAO
+				'grey': {
+					50: 'hsl(0 0% 98%)',   // Almost white
+					100: 'hsl(0 0% 96%)',  // Very light grey
+					200: 'hsl(0 0% 90%)',  // Light grey
+					300: 'hsl(0 0% 82%)',  // Medium-light grey
+					400: 'hsl(0 0% 61%)',  // Medium grey
+					500: 'hsl(0 0% 42%)',  // Medium-dark grey
+					600: 'hsl(0 0% 28%)',  // Dark grey
+					700: 'hsl(0 0% 22%)',  // Very dark grey
+					800: 'hsl(0 0% 16%)',  // Near black
+					900: 'hsl(0 0% 10%)',  // Almost black
+					950: 'hsl(0 0% 3%)',   // Pure black
+				},
+
+				// Status Colors (Greyscale)
+				status: {
+					open: 'hsl(var(--status-open))',
+					funded: 'hsl(var(--status-funded))',
+					rejected: 'hsl(var(--status-rejected))',
 				}
+			},
+			backgroundImage: {
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-dark': 'var(--gradient-dark)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'medium': 'var(--shadow-medium)',
+				'large': 'var(--shadow-large)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
